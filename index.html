@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bridgerton – La Sociedad de la Regencia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=IM+Fell+English:ital@0;1&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="header" id="inicio">
+    <div class="header__ornamento header__ornamento--izq">❧</div>
+    <div class="header__centro">
+      <p class="header__temporada">Temporada de bodas · Regencia Inglesa · 1813</p>
+      <h1 class="header__titulo">Bridgerton</h1>
+      <p class="header__subtitulo"><em>La sociedad más selecta de Londres te da la bienvenida</em></p>
+    </div>
+    <div class="header__ornamento header__ornamento--der">❧</div>
+
+    <!-- NAV con FLEXBOX + BEM -->
+    <nav class="nav">
+      <ul class="nav__lista">
+        <li class="nav__item"><a class="nav__enlace" href="#inicio">Inicio</a></li>
+        <li class="nav__item"><a class="nav__enlace" href="#familia">La Familia</a></li>
+        <li class="nav__item"><a class="nav__enlace" href="#temporadas">Temporadas</a></li>
+        <li class="nav__item"><a class="nav__enlace nav__enlace--activo" href="#cotilleos">Cotilleos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ========== MAIN ========== -->
+  <main class="main">
+
+    <!-- SECCIÓN 1: La Familia Bridgerton -->
+    <section class="seccion" id="familia">
+      <h2 class="seccion__titulo">✦ La Familia Bridgerton ✦</h2>
+      <p class="seccion__intro">Ocho hermanos. Una madre. Una temporada de bailes que cambiará sus vidas para siempre.</p>
+
+      <!-- BEM: bloque tarjeta de contenido -->
+      <div class="tarjeta">
+        <h3 class="tarjeta__titulo">Anthony Bridgerton</h3>
+        <p class="tarjeta__rol">El Vizconde · Temporada 2</p>
+        <p class="tarjeta__texto">
+          Como primogénito y cabeza de familia, Anthony carga con el peso de preservar el apellido Bridgerton.
+          Serio, protector y terco por naturaleza, su corazón guarda más secretos de los que admite.
+          Su historia de amor con Kate Sharma sacudió a toda la alta sociedad londinense.
+        </p>
+        <span class="tarjeta__badge tarjeta__badge--vizconde">Vizconde de Bridgerton</span>
+      </div>
+
+      <div class="tarjeta">
+        <h3 class="tarjeta__titulo">Daphne Bridgerton</h3>
+        <p class="tarjeta__rol">La Diamante · Temporada 1</p>
+        <p class="tarjeta__texto">
+          Elegante, inteligente y con un corazón noble, Daphne fue declarada el "Diamante de la temporada"
+          por la mismísima Reina Charlotte. Su romance con el Duque de Hastings fue el escándalo más
+          comentado en los salones de Mayfair.
+        </p>
+        <span class="tarjeta__badge tarjeta__badge--diamante">Diamante de la Temporada</span>
+      </div>
+
+      <!-- ARTICLE -->
+      <article class="articulo" id="cotilleos">
+        <h3 class="articulo__titulo">📜 Carta de Lady Whistledown</h3>
+        <p class="articulo__fecha"><em>— Londres, martes 14 de abril de 1813 —</em></p>
+        <p class="articulo__contenido">
+          "Queridos lectores, esta autora tiene el placer de informarles que la temporada de bodas
+          promete ser la más escandalosa que Londres haya visto en décadas. Los Bridgerton, como
+          siempre, ocupan el centro de todos los rumores. ¿Quién será el próximo en caer ante
+          los caprichos del amor? Esta autora lo sabrá antes que nadie."
+        </p>
+        <p class="articulo__firma">— Lady Whistledown, Sociedad de Londres</p>
+      </article>
+    </section>
+
+    <!-- SECCIÓN 2: Temporadas con FLEXBOX en columnas -->
+    <section class="seccion seccion--temporadas" id="temporadas">
+      <h2 class="seccion__titulo">✦ Temporadas de la Serie ✦</h2>
+      <p class="seccion__intro">Cada temporada, un Bridgerton encuentra (o huye de) el amor.</p>
+
+      <div class="columnas">
+        <div class="columnas__item">
+          <span class="columnas__numero">I</span>
+          <h3 class="columnas__titulo">Daphne & Simon</h3>
+          <p class="columnas__texto">Un acuerdo secreto entre la diamante de la temporada y el soltero más codiciado de Londres. ¿Fingir amor o descubrir que es real?</p>
+          <span class="columnas__etiqueta">2020</span>
+        </div>
+        <div class="columnas__item columnas__item--destacado">
+          <span class="columnas__numero">II</span>
+          <h3 class="columnas__titulo">Anthony & Kate</h3>
+          <p class="columnas__texto">El Vizconde busca novia ideal mientras lidia con una mujer que lo desafía en todo. El amor llega cuando menos se espera.</p>
+          <span class="columnas__etiqueta">2022</span>
+        </div>
+        <div class="columnas__item">
+          <span class="columnas__numero">III</span>
+          <h3 class="columnas__titulo">Penelope & Colin</h3>
+          <p class="columnas__texto">La amiga silenciosa y el viajero encantador. Penelope Featherington guarda secretos más grandes que su corazón.</p>
+          <span class="columnas__etiqueta">2024</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== ASIDE ========== -->
+  <aside class="aside">
+    <h3 class="aside__titulo">🌸 Datos de la Serie</h3>
+    <ul class="aside__lista">
+      <li class="aside__item"><strong>Creadora:</strong> Chris Van Dusen</li>
+      <li class="aside__item"><strong>Basada en:</strong> Novelas de Julia Quinn</li>
+      <li class="aside__item"><strong>Plataforma:</strong> Netflix</li>
+      <li class="aside__item"><strong>Estreno:</strong> 25 dic. 2020</li>
+      <li class="aside__item"><strong>Temporadas:</strong> 3 (en curso)</li>
+      <li class="aside__item"><strong>Género:</strong> Romance · Drama · Histórico</li>
+    </ul>
+
+    <div class="aside__cita">
+      <p><em>"El amor verdadero no sigue las reglas de la sociedad."</em></p>
+    </div>
+  </aside>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer" id="contacto">
+    <div class="footer__ornamento">— ✦ —</div>
+    <p class="footer__texto">Bridgerton · Página informativa creada con fines educativos</p>
+    <p class="footer__subtexto">Basada en las novelas de Julia Quinn · Serie original Netflix © Shondaland</p>
+    <div class="footer__ornamento">— ✦ —</div>
+  </footer>
+
+  <!-- POSITION FIXED: botón flotante -->
+  <a class="btn-flotante" href="#inicio" title="Volver al inicio">↑</a>
+
+</body>
+</html>
